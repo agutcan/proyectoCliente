@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100" style="background-color: #1c1c1c">
     <!-- Header -->
     <header class="p-3 sticky-top" style="background-color: rgba(66, 66, 66, 0.81)">
         <div class="container">
@@ -44,10 +44,37 @@
     </header>
 
     <!-- Contenido -->
-    <div class="container-fluid flex-grow-1 text-white">
-        <div class="container-fluid" style="background-color: #dd3232">
-            <h1 class=""><b>Counter Strike 2!</b></h1>
-        </div>
+    <!-- Banner -->
+    <div class="container-fluid text-center text-white p-5" style="background-color: #dd3232">
+        <h1 class="">Torneos de Counter Strike 2!</h1>
+        <p>Forma tu equipo y compite contra otros.</p>
     </div>
+
+    <!-- Torneos -->
+    <div class="flex-grow-1 text-center text-white mt-2">
+        <p>En ArenaGG hacemos posible juguéis torneos vuestro equipo de amigos.</p>
+        <button type="submit" style="background-color: #dd3232;" class="rounded btn text-white">Crea tu propio Torneo</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 mt-4 text-white" style="background-color: rgba(66, 66, 66, 0.81)">
+        <div class="container content">
+            <ul class="list-unstyled text-center justify-content-center border-bottom pb-3 mb-3">
+                <li>
+                    <p class="display-6">Realizado por:</p>
+                </li>
+                <li>
+                    <p>Aarón Gutiérrez Caña</p>
+                </li>
+                <li>
+                    <p>Alejandro Jiménez Pérez</p>
+                </li>
+                <li>
+                    <p>Jesús Carmelo Pérez Robles</p>
+                </li>
+            </ul>
+            <p class="text-center text-white">© 2025 Arena GG, Inc</p>
+        </div>
+    </footer>
 </body>
 </html>
