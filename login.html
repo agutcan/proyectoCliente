@@ -23,7 +23,7 @@
     <!-- Formulario de Login -->
     <div class="container">
         <h2 class="text-white my-4">🚀 Iniciar Sesión</h2>
-        <form class="text-center">
+        <form method="POST" onsubmit="return validate(this)" class="text-center">
             <div class="mb-3 text-start">
                 <label for="login-email" class="form-label text-white">Correo Electrónico:</label> <span style="width: 24px; display: none;"> 🚫</span> <!-- display: contents -->
                 <input type="email" class="form-control mx-auto d-block" id="login-email" placeholder="Ingresa tu correo" required> 
