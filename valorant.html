@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArenaGG - Valorant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./valorant.css">
 </head>
-<body>
-    
+
+<body class="d-flex flex-column min-vh-100" style="background-color: #1c1c1c">
+    <!-- Header -->
+    <header class="p-3 sticky-top" style="background-color: rgba(66, 66, 66, 0.81)">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="text-start">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li>
+                            <button class="btn m-1 p-1" style="background-color: #dd3232"><a class="nav-link px-2 text-white p-0 m-0" href="index.html">Inicio</a></button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <ul class="nav col-12 col-lg-auto me-lg-auto ms-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <button class="btn m-1 p-1" style="background-color: #dd3232"><a class="nav-link px-2 text-white p-0 m-0" href="./valorant.html">Valorant</a></button>
+                    </li>
+                    <li>
+                        <button class="btn m-1 p-1" style="background-color: #dd3232"><a class="nav-link px-2 text-white p-0 m-0" href="./lol.html">League of Legends</a></button>
+                    </li>
+                    <li>
+                        <button class="btn m-1 p-1" style="background-color: #dd3232"><a class="nav-link px-2 text-white p-0 m-0" href="./counter.html">Counter Strike 2</a></button>
+                    </li>
+                </ul>
+
+                <div class="text-end">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li>
+                            <button class="btn m-1 p-1" style="background-color: #dd3232"><a class="nav-link px-2 text-white p-0 m-0" href="#">Soporte</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido -->
+    <!-- Banner -->
+    <div class="container-fluid text-center text-white p-5" style="background-color: #dd3232">
+        <h1 class="">Torneos de Valorant!</h1>
+        <p>Forma tu equipo y compite contra otros.</p>
+    </div>
+
+    <!-- Torneos -->
+    <div class="flex-grow-1 text-center text-white mt-2">
+        <p>En ArenaGG proporcionamos torneos para jugar con un equipo de amigos.</p>
+        <button type="submit" style="background-color: #dd3232;" class="rounded btn text-white">Crea tu propio Torneo</button>
+        <div class="container text-start d-flex flex-column align-items-center justify-content-center" id="containerTorneos">
+            <div class="row mt-4 p-3 rounded torneo" style="box-shadow: 0 0 20px rgba(128, 128, 128, 0.5); width: 70%;">
+                <div class="col-9">
+                    <h3 class="text-white">Torneo 1</h3>
+                    <p class="text-white">Torneo Valorant 1 vs 1</p>
+                    <p class="text-white">Torneo clásico 1 contra 1</p>
+                    <p class="contadorJugadores">Jugadores en el torneo: 1/2</p>
+                </div>
+                <div class="col m-auto">
+                    <button type="submit" class="rounded btn text-white" style="background-color: #dd3232;">Registrarse</button>
+                </div>
+            </div>
+            <div class="row mt-4 p-3 rounded torneo" style="box-shadow: 0 0 20px rgba(128, 128, 128, 0.5); width: 70%;">
+                <div class="col-9">
+                    <h3 class="text-white">Torneo 2</h3>
+                    <p class="text-white">Torneo Valorant 2 vs 2</p>
+                    <p class="text-white">Torneo clásico 2 contra 2</p>
+                    <p class="contadorJugadores">Jugadores en el torneo: 0/4</p>
+                </div>
+                <div class="col m-auto">
+                    <button type="submit" class="rounded btn text-white" style="background-color: #dd3232;">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 mt-4 text-white" style="background-color: rgba(66, 66, 66, 0.81)">
+        <div class="container content">
+            <ul class="list-unstyled text-center justify-content-center border-bottom pb-3 mb-3">
+                <li>
+                    <p class="display-6">Realizado por:</p>
+                </li>
+                <li>
+                    <p>Aarón Gutiérrez Caña</p>
+                </li>
+                <li>
+                    <p>Alejandro Jiménez Pérez</p>
+                </li>
+                <li>
+                    <p>Jesús Carmelo Pérez Robles</p>
+                </li>
+            </ul>
+            <p class="text-center text-white">© 2025 Arena GG, Inc</p>
+        </div>
+    </footer>
+    <script src="valorant.js"></script>
 </body>
+
 </html>
