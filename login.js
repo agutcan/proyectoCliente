@@ -1,0 +1,3 @@
+function crearTorneo(event) {
+    
+}
