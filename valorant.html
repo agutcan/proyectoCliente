@@ -56,28 +56,53 @@
     <!-- Torneos -->
     <div class="flex-grow-1 text-center text-white mt-2">
         <p>En ArenaGG proporcionamos torneos para jugar con un equipo de amigos.</p>
-        <a href="formularioValorant.html"><button type="submit" style="background-color: #dd3232;" class="rounded btn text-white">Crea tu propio Torneo</button></a>
+        <button type="submit" onclick="mostrarFormulario()" style="background-color: #dd3232;" class="rounded btn text-white">Crea tu propio Torneo</button>
+
+        <div class="container-fluid flex-grow-1 text-center rounded mt-4" style="max-width: 400px; box-shadow: 0 0 20px rgba(128, 128, 128, 0.5);">
+            <!-- Formulario de Crear un torneo -->
+            <div class="container py-2" id="formularioTorneo" style="display: none;">
+                <h2 class="text-white m-4">🚀 Crear torneo</h2>
+                <form method="POST" onsubmit="return crearTorneo(this)">
+                    <div class="mb-3 text-start">
+                        <label for="tournamentName" class="form-label text-white">Nombre del torneo:</label> <span id="spanNombreTorneo" style="width: 24px; display: none;"> 🚫</span> <!-- display: contents -->
+                        <input type="text" class="form-control" id="tournamentName" placeholder="Ingresa el nombre de tu torneo" required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="tournamentVersus" class="form-label text-white">Cantidad de versus:</label> <span id="spanVersusTorneo"style="width: 24px; display: none;"> 🚫</span> <!-- display: contents -->
+                        <input type="text" class="form-control" id="tournamentVersus" placeholder="1vs1, 2vs2..." required>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="description" class="form-label text-white">Descripción:</label> <span id="spanDescripcionTorneo" style="width: 24px; display: none;"> 🚫</span> <!-- display: contents -->
+                        <input type="text" class="form-control" id="description" placeholder="Ingresa una breve descripción" required>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100 text-white" style="background-color: #dd3232">Crear</button>
+                </form>
+                <p class="mt-3 text-white">¿Quieres volver? <a href="index.html" class="text-warning">Inicio</a></p>
+            </div>
+        </div>
+
+
         <div class="container text-start d-flex flex-column align-items-center justify-content-center" id="containerTorneos">
-            <div class="row mt-4 p-3 rounded torneo" style="box-shadow: 0 0 20px rgba(128, 128, 128, 0.5); width: 70%;">
+            <div id="Torneo 1" class="row mt-4 p-3 rounded torneo" style="box-shadow: 0 0 20px rgba(128, 128, 128, 0.5); width: 70%;">
                 <div class="col-9">
                     <h3 class="text-white">Torneo 1</h3>
                     <p class="text-white">Torneo Valorant 1 vs 1</p>
                     <p class="text-white">Torneo clásico 1 contra 1</p>
-                    <p class="contadorJugadores">Jugadores en el torneo: 1/2</p>
                 </div>
                 <div class="col m-auto">
-                    <button type="submit" class="rounded btn text-white" style="background-color: #dd3232;">Registrarse</button>
+                    <button type="submit" onclick="registrarse(this)" class="rounded btn text-white mb-1" style="background-color: #dd3232;">Registrarse</button>
+                    <button type="submit" value="Torneo 1" onclick="eliminar(this)" class="rounded btn text-white mb-1" style="background-color: #dd3232;">Eliminar</button>
                 </div>
             </div>
-            <div class="row mt-4 p-3 rounded torneo" style="box-shadow: 0 0 20px rgba(128, 128, 128, 0.5); width: 70%;">
+            <div id="Torneo 2" class="row mt-4 p-3 rounded torneo" style="box-shadow: 0 0 20px rgba(128, 128, 128, 0.5); width: 70%;">
                 <div class="col-9">
                     <h3 class="text-white">Torneo 2</h3>
                     <p class="text-white">Torneo Valorant 2 vs 2</p>
                     <p class="text-white">Torneo clásico 2 contra 2</p>
-                    <p class="contadorJugadores">Jugadores en el torneo: 0/4</p>
                 </div>
                 <div class="col m-auto">
-                    <button onclick="registrarse()" type="submit" class="rounded btn text-white" style="background-color: #dd3232;">Registrarse</button>
+                    <button onclick="registrarse(this)" type="submit" class="rounded btn text-white mb-1" style="background-color: #dd3232;">Registrarse</button>
+                    <button type="submit" value="Torneo 2" onclick="eliminar(this)" class="rounded btn text-white mb-1" style="background-color: #dd3232;">Eliminar</button>
                 </div>
             </div>
         </div>
