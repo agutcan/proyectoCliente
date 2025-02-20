@@ -90,7 +90,7 @@ function crearTorneo(form) {
         boton.setAttribute("style", "background-color: #dd3232;");
         boton.appendChild(document.createTextNode("Registrarse"));
         boton.addEventListener("click", () => {
-            registrarse(this);
+            registrarse(boton);
         })
 
         let boton2 = document.createElement("button");
@@ -100,7 +100,7 @@ function crearTorneo(form) {
         boton2.setAttribute("value", nombreTorneo)
         boton2.appendChild(document.createTextNode("Eliminar"));
         boton2.addEventListener("click", () => {
-            eliminar(this);
+            eliminar(boton2);
         })
 
         div2.appendChild(h3);
@@ -116,6 +116,7 @@ function crearTorneo(form) {
 }
 
 function registrarse(element) {
+    console.log(element)
     if (element.innerText == "Registrarse") {
         element.innerText = "Abandonar";
     } else {
