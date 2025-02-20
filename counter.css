@@ -1,3 +1,9 @@
 .torneo {
     background-color: rgba(66, 66, 66, 1);
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.5);
+    transition: all 0.3s ease;
+}
+
+.torneo:hover {
+    transform: scale(1.05);
 }
