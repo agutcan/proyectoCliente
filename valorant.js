@@ -1,3 +1,5 @@
+// Trabajo realizado por Aarón Gutiérrez Caña
+
 function mostrarFormulario() {
     let div = document.getElementById("formularioTorneo");
     div.style.display = "block";
@@ -16,9 +18,9 @@ function crearTorneo(form) {
     let spanVersus = document.getElementById("spanVersusTorneo");
     let spanDescripcion = document.getElementById("spanDescripcionTorneo");
 
-    let expRegNombre = /^[A-Z][a-z]{3,15}$/; // Comprueba si una cadena empieza por una mayuscula y contiene entre 3 y 15 letras
+    let expRegNombre = /^[A-Z][a-z]{3,15}$/; // Comprueba si una cadena empieza por una mayuscula y contiene entre 3 y 15 caracteres
     let expRegVersus = /^\dvs\d$/; // Comprueba si una cadena empieza por un número seguido por "vs" y por otro número
-    let expRegDescripcion = /^.{1,200}$/; // Comprueba si una cadena empieza con un caracter y contiene como máximo 200 letras
+    let expRegDescripcion = /^.{1,200}$/; // Comprueba si una cadena empieza con un caracter y contiene como máximo 200 caracteres
     let expRegEspacio = /^\s+$/; // Comprueba si una cadena esta compuesta por espacios
 
     let contadorErrores = 0;
