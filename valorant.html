@@ -63,6 +63,10 @@
             <div class="container py-2" id="formularioTorneo" style="display: none;">
                 <h2 class="text-white m-4">🚀 Crear torneo</h2>
                 <form method="POST" onsubmit="return crearTorneo(this)">
+                <!-- Ejecuta la función JavaScript 'validate(this)' cuando el usuario intenta enviar el formulario.
+                - 'this' se refiere al formulario, que es pasado como argumento a la función.
+                - Si la función 'validate' devuelve 'false', el formulario no se enviará (permitiendo hacer validaciones antes de enviar los datos).
+                - Si devuelve 'true', el formulario se enviará al servidor. -->
                     <div class="mb-3 text-start">
                         <label for="tournamentName" class="form-label text-white">Nombre del torneo:</label> <span id="spanNombreTorneo" style="width: 24px; display: none;"> 🚫</span> <!-- display: contents -->
                         <input type="text" class="form-control" id="tournamentName" placeholder="Ingresa el nombre de tu torneo" required>
