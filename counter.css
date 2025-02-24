@@ -7,3 +7,9 @@
 .torneo:hover {
     transform: scale(1.05);
 }
+
+.caja_formulario {
+    background-color: rgba(66, 66, 66, 1);
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.5);
+    display: none;
+}
