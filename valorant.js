@@ -138,7 +138,6 @@ function crearTorneo(form) {
 
 // Función para cambiar el texto del botón de registro entre "Registrarse" y "Abandonar"
 function registrarse(element) {
-    console.log(element); // Muestra el botón en la consola para depuración
     if (element.innerText == "Registrarse") {
         element.innerText = "Abandonar"; // Cambia el texto a "Abandonar" si era "Registrarse"
     } else {
@@ -149,6 +148,5 @@ function registrarse(element) {
 // Función para eliminar un torneo
 function eliminar(element) {
     let div = document.getElementById("containerTorneos"); // Obtiene el contenedor de torneos
-    console.log(document.getElementById(element.value)); // Muestra el torneo a eliminar en la consola
     div.removeChild(document.getElementById(element.value)); // Elimina el torneo correspondiente del DOM
 }
