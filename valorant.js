@@ -68,6 +68,8 @@ function crearTorneo(form) {
     // Si no hay errores, oculta el formulario y crea el nuevo torneo
     if (contadorErrores == 0) {
         ocultarFormulario(); // Llama a la función para ocultar el formulario
+    } else {
+        return false; // Previene que el formulario se envíe de forma tradicional
     }
 
     // Obtiene el contenedor donde se agregarán los torneos creados
@@ -105,7 +107,7 @@ function crearTorneo(form) {
     // Crea el botón de "Registrarse"
     let boton = document.createElement("button");
     boton.setAttribute("type", "submit"); // Establece el tipo de botón
-    boton.setAttribute("class", "rounded btn text-white mb-1"); // Asigna clases BT5
+    boton.setAttribute("class", "rounded btn text-white mb-1 me-1"); // Asigna clases BT5
     boton.setAttribute("style", "background-color: #dd3232;"); // Asigna un color de fondo al botón
     boton.appendChild(document.createTextNode("Registrarse")); // Añade el texto "Registrarse" al botón
     boton.addEventListener("click", () => {
@@ -134,6 +136,7 @@ function crearTorneo(form) {
     contenedor.appendChild(div); // Añade el nuevo torneo al contenedor de torneos
 
     return false; // Previene que el formulario se envíe de forma tradicional
+    
 }
 
 // Función para cambiar el texto del botón de registro entre "Registrarse" y "Abandonar"
