@@ -1,144 +1,475 @@
-# ArenaGG - Página de Inicio
-
-Este es el proyecto de inicio de **ArenaGG**, una plataforma para torneos de videojuegos como Valorant, League of Legends y Counter Strike 2.
+# ArenaGG
 
 ## Descripción
 
-La página de inicio presenta una barra de navegación con enlaces a diferentes secciones del sitio y un carrusel con imágenes representando los juegos destacados. El diseño está basado en **Bootstrap 5** y es completamente responsivo.
+Página para crear/eliminar, registrarse/abandonar torneos de videojuegos y simula inicio/registro de usuario.
 
-## Estructura del Proyecto
+# ArenaGG - Página de Inicio
 
-### 1. **Header (Encabezado)**
-Contiene una barra de navegación con botones de enlaces a diferentes secciones:
-- **Inicio**
-- **Login**
-- **Valorant**
-- **League of Legends**
-- **Counter Strike 2**
-  
-La barra de navegación está fija en la parte superior de la página.
+Este archivo describe la estructura y funcionamiento de la página principal de ArenaGG, diseñada para proporcionar acceso a los torneos de diferentes videojuegos.
 
-### 2. **Contenido Principal**
-  
-- **Carrusel de Imágenes**: Un carrusel con tres imágenes principales:
-  - **Valorant**
-  - **League of Legends**
-  - **Counter Strike 2**
+## Descripción
 
-Cada imagen está enlazada a la página correspondiente del juego, permitiendo al usuario navegar a la página del torneo de su interés.
+La página de inicio incluye un encabezado con enlaces a diferentes secciones, un carrusel de imágenes destacadas para los torneos de los juegos disponibles y un pie de página con la información de los autores del proyecto.
 
-### 3. **Footer (Pie de Página)**
-El pie de página contiene:
-- Información sobre los creadores del proyecto.
-- Créditos y derechos de autor.
+### 1. Encabezado (Navegación)
+
+El encabezado es una barra de navegación fija que proporciona acceso a las distintas secciones del sitio:
+
+- **Inicio**: Redirige a la página principal de ArenaGG.
+- **Login**: Enlace a la página de inicio de sesión para los usuarios.
+- **Valorant**: Enlace a la página de torneos de Valorant.
+- **League of Legends**: Enlace a la página de torneos de League of Legends.
+- **Counter Strike 2**: Enlace a la página de torneos de Counter Strike 2.
+- **Soporte**: Página actual de soporte.
+
+Los botones de la barra de navegación están estilizados con el color rojo característico de ArenaGG (#dd3232).
+
+### 2. Carrusel
+
+El carrusel de imágenes muestra los juegos disponibles con enlaces a las páginas de torneos para cada uno:
+
+- **Valorant**: Imagen con enlace a la página de torneos de Valorant.
+- **League of Legends**: Imagen con enlace a la página de torneos de League of Legends.
+- **Counter Strike 2**: Imagen con enlace a la página de torneos de Counter Strike 2.
+
+Cada imagen en el carrusel está enlazada a su respectiva página.
+
+### 3. Footer (Pie de Página)
+
+El pie de página contiene la siguiente información:
+
+- **Autores del Proyecto**:
+  - Aarón Gutiérrez Caña
+  - Alejandro Jiménez Pérez
+  - Jesús Carmelo Pérez Robles
+
+- **Derechos de Autor**:
+  - © 2025 Arena GG, Inc
+
+El pie de página está estilizado con el color gris oscuro característico de ArenaGG (#424242).
+
+### 4. Funcionalidades Principales
+
+- **Navegación**: Permite el acceso fácil a las secciones del sitio.
+- **Carrusel**: Ofrece imágenes interactivas para los torneos de diferentes juegos.
+- **Pie de Página**: Proporciona información de los autores y derechos de autor.
+
+### 5. Archivos Externos
+
+- **Bootstrap 5**: Framework CSS para garantizar un diseño moderno y responsivo.
+- **Imágenes**: Las imágenes del carrusel están vinculadas a sus respectivas páginas de torneos.
 
 ---
 
-# Explicación de la Página de Inicio de Sesión - ArenaGG
+# ArenaGG - Página de Inicio de Sesión
 
-Este documento describe el funcionamiento de la página de inicio de sesión del sitio web **ArenaGG**, donde los usuarios pueden ingresar sus credenciales para acceder a su cuenta.
+Este archivo describe la estructura y funcionamiento de la página de inicio de sesión de ArenaGG, diseñada para que los usuarios puedan iniciar sesión en la plataforma.
 
-## Estructura
+## Descripción
 
-### 1. **Encabezado (Header)**
-El encabezado contiene el logo de **ArenaGG** y un enlace a la página principal. Se utiliza una barra de navegación sencilla que se mantiene fija en la parte superior de la página. El logo tiene un tamaño adecuado y al hacer clic en él, se redirige al usuario al inicio.
+La página de inicio de sesión contiene un formulario donde los usuarios pueden ingresar su correo electrónico y contraseña. También ofrece enlaces para los usuarios que no tengan cuenta, para que puedan registrarse. La página está diseñada con Bootstrap 5 para un diseño moderno y responsivo.
 
-### 2. **Formulario de Inicio de Sesión**
-El cuerpo principal de la página está dedicado a un formulario de inicio de sesión. Este formulario permite a los usuarios ingresar su **correo electrónico** y **contraseña** para acceder a su cuenta.
+### 1. Encabezado (Navegación)
 
-- **Validación Visual:** Los campos de correo electrónico y contraseña tienen validación visual mediante íconos que se muestran cuando los datos no son correctos. Esta validación se realiza usando JavaScript.
+El encabezado es una barra fija en la parte superior de la página que contiene el logo de ArenaGG:
+
+- **Logo**: El logo de ArenaGG actúa como un enlace que redirige a la página de inicio (index.html).
+
+El encabezado tiene un fondo gris oscuro con opacidad (`rgba(66, 66, 66, 0.81)`).
+
+### 2. Formulario de Inicio de Sesión
+
+En el centro de la página, se encuentra el formulario de inicio de sesión que permite a los usuarios ingresar su correo electrónico y contraseña:
+
+- **Correo Electrónico**: Un campo de entrada donde los usuarios deben ingresar su correo electrónico.
+- **Contraseña**: Un campo de entrada donde los usuarios deben ingresar su contraseña.
+- **Botón de Enviar**: Un botón de inicio de sesión que está inicialmente deshabilitado. Se habilita cuando ambos campos son válidos.
+
+Cada uno de estos campos tiene una validación visual, que muestra un ícono de advertencia 🚫 si el usuario no ingresa datos válidos o si la validación no pasa. Esta validación se maneja mediante JavaScript. Si la validación falla, el formulario no se enviará.
+
+### 3. Enlace de Registro
+
+Debajo del formulario, se ofrece un enlace para que los usuarios puedan registrarse si no tienen una cuenta:
+
+- **¿No tienes cuenta?**: Un enlace que lleva a la página de registro (`registro.html`).
+
+### 4. Footer (Pie de Página)
+
+El pie de página contiene la siguiente información:
+
+- **Autores del Proyecto**:
+  - Aarón Gutiérrez Caña
+  - Alejandro Jiménez Pérez
+  - Jesús Carmelo Pérez Robles
+
+- **Derechos de Autor**:
+  - © 2025 Arena GG, Inc
+
+El pie de página tiene el mismo fondo gris oscuro con opacidad (`rgba(66, 66, 66, 0.81)`).
+
+### 5. Funcionalidades Principales
+
+- **Formulario de Login**: Permite a los usuarios iniciar sesión en la plataforma con su correo electrónico y contraseña.
+- **Validaciones de Formulario**: Usa JavaScript para validar los campos del formulario antes de enviarlo.
+- **Enlace de Registro**: Proporciona un enlace a la página de registro para usuarios nuevos.
   
-- **Deshabilitar el botón de envío:** El botón de envío está inicialmente deshabilitado. Se habilita cuando ambos campos (correo y contraseña) son ingresados correctamente.
+### 6. Archivos Externos
 
-- **Enlace a la página de registro:** Si el usuario no tiene cuenta, hay un enlace visible para redirigirlo a la página de registro.
-
-### 3. **Pie de Página (Footer)**
-El pie de página contiene información de los creadores del proyecto. Este incluye una lista con los nombres de los autores, seguida de un mensaje de copyright que menciona el año 2025 y el nombre de la empresa, **Arena GG**.
-
-### 4. **Archivos Externos**
-- **CSS de Bootstrap:** Se incluye una hoja de estilos de Bootstrap para facilitar la creación de una interfaz moderna y responsiva.
-  
-- **JavaScript para validación:** Se hace uso de un archivo JavaScript externo (login.js) para realizar la validación de los campos antes de enviar el formulario.
+- **Bootstrap 5**: Framework CSS para un diseño moderno y responsivo.
+- **login.js**: Archivo JavaScript que contiene la lógica de validación del formulario.
 
 ---
+# ArenaGG - Página de Registro
 
-# Explicación de la Página de Registro - ArenaGG
+Este archivo describe la estructura y funcionamiento de la página de registro de ArenaGG, donde los nuevos usuarios pueden crear una cuenta.
 
-Este documento describe cómo funciona la página de registro de **ArenaGG**, donde los nuevos usuarios pueden crear una cuenta proporcionando su información.
+## Descripción
 
-## Estructura
+La página de registro permite a los nuevos usuarios crear una cuenta en ArenaGG. El formulario solicita el nombre de usuario, correo electrónico y contraseña. Se utiliza Bootstrap 5 para un diseño responsivo y moderno.
 
-### 1. **Encabezado (Header)**
-El encabezado contiene el logo de **ArenaGG**. Es un área fija en la parte superior de la página y al hacer clic sobre el logo, se redirige al usuario al inicio del sitio.
+### 1. Encabezado (Navegación)
 
-### 2. **Formulario de Registro**
-La página principal contiene un formulario de registro en el cual el usuario debe ingresar tres tipos de información:
+El encabezado es una barra fija en la parte superior de la página que contiene el logo de ArenaGG:
 
-- **Nombre de Usuario:** Un campo de texto donde el usuario debe escribir su nombre de usuario deseado.
-  
-- **Correo Electrónico:** Un campo de correo electrónico donde el usuario introduce su dirección de correo electrónico.
+- **Logo**: El logo de ArenaGG es un enlace que redirige a la página de inicio (index.html).
 
-- **Contraseña:** Un campo de contraseña donde el usuario debe establecer una contraseña.
+El encabezado tiene un fondo gris oscuro con opacidad (`rgba(66, 66, 66, 0.81)`).
 
-Cada uno de estos campos tiene una validación visual, que muestra un ícono de advertencia 🚫 si el usuario no ingresa datos válidos o si la validación no pasa. Esta validación se maneja mediante JavaScript.
+### 2. Formulario de Registro
 
-- **Deshabilitar el botón de registro:** El botón de registro está inicialmente deshabilitado y solo se habilita una vez que todos los campos han sido completados correctamente.
+En el centro de la página, se encuentra el formulario de registro donde los usuarios deben ingresar:
 
-### 3. **Enlace a Iniciar Sesión**
-Si el usuario ya tiene una cuenta, hay un enlace visible que lo redirige a la página de inicio de sesión.
+- **Nombre de Usuario**: Un campo de entrada donde los usuarios deben escribir su nombre de usuario.
+- **Correo Electrónico**: Un campo de entrada para ingresar el correo electrónico.
+- **Contraseña**: Un campo de entrada para que los usuarios creen una contraseña.
 
-### 4. **Pie de Página (Footer)**
-En el pie de página se incluye la siguiente información:
+Cada uno de estos campos tiene una validación visual, que muestra un ícono de advertencia 🚫 si el usuario no ingresa datos válidos o si la validación no pasa. Esta validación se maneja mediante JavaScript. Si la validación falla, el formulario no se enviará.
 
-- **Autores del Proyecto:** Los nombres de los creadores del sitio.
-  
-- **Copyright:** Un mensaje de copyright que menciona el año 2025 y el nombre de la empresa, **Arena GG**.
+- **Botón de Enviar**: Un botón de registro que está inicialmente deshabilitado. Se habilita solo cuando los campos son válidos.
 
-### 5. **Archivos Externos**
-- **CSS de Bootstrap:** Se incluye una hoja de estilos de Bootstrap para ayudar en la creación de una interfaz moderna y responsiva.
+### 3. Enlace de Login
 
-- **Hoja de Estilos Personalizada (indexRegistro.css):** Un archivo CSS personalizado para ajustar el diseño y los estilos del formulario a las necesidades del proyecto.
+Debajo del formulario, los usuarios tienen un enlace para iniciar sesión si ya tienen una cuenta:
 
-- **JavaScript para Validación:** Un archivo JavaScript externo (`registro.js`) se utiliza para manejar la validación de los campos del formulario antes de enviarlo.
+- **¿Ya tienes cuenta?**: Un enlace que lleva a la página de inicio de sesión (`login.html`).
+
+### 4. Footer (Pie de Página)
+
+El pie de página contiene la siguiente información:
+
+- **Autores del Proyecto**:
+  - Aarón Gutiérrez Caña
+  - Alejandro Jiménez Pérez
+  - Jesús Carmelo Pérez Robles
+
+- **Derechos de Autor**:
+  - © 2025 Arena GG, Inc
+
+El pie de página tiene el mismo fondo gris oscuro con opacidad (`rgba(66, 66, 66, 0.81)`).
+
+### 5. Funcionalidades Principales
+
+- **Formulario de Registro**: Permite a los usuarios crear una cuenta proporcionando su nombre de usuario, correo electrónico y contraseña.
+- **Validaciones de Formulario**: Usa JavaScript para verificar que los campos sean válidos antes de enviar el formulario.
+- **Enlace de Login**: Proporciona un enlace para usuarios que ya tienen una cuenta y desean iniciar sesión.
+
+### 6. Archivos Externos
+
+- **Bootstrap 5**: Framework CSS para un diseño moderno y responsivo.
+- **registro.js**: Archivo JavaScript que contiene la lógica de validación del formulario.
 
 ---
 
 # ArenaGG - Página de Torneos de Valorant
 
-Este repositorio contiene la página para **ArenaGG**, específicamente para los torneos de **Valorant**. La página permite a los usuarios crear, registrarse y gestionar torneos. A continuación se presenta un resumen de la estructura y funcionalidades de la página.
+Este archivo describe la página de torneos de Valorant de ArenaGG, donde los usuarios pueden registrarse en torneos existentes o crear nuevos.
 
-## 1. Encabezado (Navegación)
-El encabezado contiene un menú de navegación con los siguientes botones:
+## Descripción
 
-- **Inicio:** Redirige a la página de inicio.
-- **Valorant:** Enlace a la página de torneos de **Valorant**.
-- **League of Legends:** Enlace a la página de torneos de **League of Legends**.
-- **Counter Strike 2:** Enlace a la página de torneos de **Counter Strike 2**.
-- **Soporte:** Un botón para soporte, aunque la página de destino no está definida.
+La página permite a los usuarios ver los torneos existentes, registrarse en ellos o crear nuevos torneos. El diseño se basa en Bootstrap 5, con un esquema de colores rojo y gris.
 
-Los botones están estilizados con el color rojo característico de ArenaGG (`#dd3232`).
+### 1. Encabezado (Navegación)
 
-## 2. Banner de Torneo de Valorant
-Esta sección presenta un mensaje promocional para los torneos de **Valorant**. Se invita a los usuarios a formar equipos y competir contra otros.
+El encabezado es una barra fija que contiene los siguientes elementos:
 
-## 3. Crear Torneo
+- **Botón de Inicio**: Redirige a la página principal (`index.html`).
+- **Botones de Navegación**: Enlaces a otras páginas de torneos de videojuegos:
+  - **Valorant**: La página actual.
+  - **League of Legends**: Página de torneos de LoL.
+  - **Counter Strike 2**: Página de torneos de Counter Strike 2.
+- **Botón de Soporte**: Un enlace a la sección de soporte (aún no implementado).
+
+El encabezado tiene un fondo gris oscuro con opacidad (`rgba(66, 66, 66, 0.81)`).
+
+### 2. Banner de Torneos
+
+Un banner en la parte superior de la página resalta la temática de los torneos de Valorant:
+
+- **Texto**: "Torneos de Valorant!" y una breve descripción: "Forma tu equipo y compite contra otros".
+- **Fondo**: Rojo (`#dd3232`).
+
+### 3. Sección de Torneos
+
+Esta sección permite a los usuarios interactuar con los torneos de Valorant:
+
+- **Descripción General**: Un mensaje introductorio sobre los torneos disponibles.
+- **Botón para Crear Torneo**: Un botón que muestra un formulario para crear un nuevo torneo cuando se hace clic.
+  
+### 4. Formulario para Crear un Torneo
+
+Un formulario que permite a los usuarios crear un nuevo torneo. Los campos incluyen:
+
+- **Nombre del Torneo**: Campo de texto para ingresar el nombre del torneo.
+- **Cantidad de Versus**: Campo de texto para definir cómo se jugarán los enfrentamientos (ej. 1vs1, 2vs2).
+- **Descripción**: Campo de texto para ingresar una breve descripción del torneo.
+
+El formulario es validado con JavaScript antes de enviarlo.
+
+### 5. Listado de Torneos
+
+Los torneos disponibles se muestran en tarjetas. Cada tarjeta incluye:
+
+- **Nombre y Descripción del Torneo**: Información básica sobre el torneo.
+- **Botones de Acción**:
+  - **Registrarse**: Permite que los usuarios se inscriban en el torneo.
+  - **Eliminar**: Permite eliminar el torneo si es el creador del mismo.
+
+Se muestran dos torneos de ejemplo (Torneo 1 y Torneo 2).
+
+### 6. Pie de Página
+
+El pie de página incluye la información sobre los creadores de la plataforma:
+
+- **Autores del Proyecto**:
+  - Aarón Gutiérrez Caña
+  - Alejandro Jiménez Pérez
+  - Jesús Carmelo Pérez Robles
+
+- **Derechos de Autor**:
+  - © 2025 Arena GG, Inc
+
+El pie de página tiene el mismo fondo gris oscuro con opacidad (`rgba(66, 66, 66, 0.81)`).
+
+### 7. Funcionalidades Principales
+
+- **Creación de Torneos**: Los usuarios pueden crear un nuevo torneo proporcionando el nombre, la cantidad de versus y una breve descripción.
+- **Registro en Torneos**: Los usuarios pueden registrarse en los torneos disponibles.
+- **Eliminación de Torneos**: Los usuarios pueden eliminar los torneos que han creado.
+- **Visualización de Torneos**: Los torneos activos se muestran en una lista interactiva.
+
+### 8. Archivos Externos
+
+- **Bootstrap 5**: Framework CSS para un diseño moderno y responsivo.
+- **valorant.js**: Archivo JavaScript que contiene la lógica para el formulario y la interacción con los torneos.
+
+---
+# ArenaGG - Página de Counter Strike 2
+
+Este documento describe el funcionamiento y la estructura de la página dedicada a los torneos de Counter Strike 2 en la plataforma ArenaGG.
+
+## Descripción
+
+La página permite a los usuarios visualizar y crear torneos de Counter Strike 2. Cuenta con una interfaz dinámica e interactiva, desarrollada con HTML, CSS (a través de Bootstrap 5) y JavaScript para la lógica de creación e inscripción a torneos.
+
+### 1. Encabezado (Navegación)
+
+El encabezado es una barra de navegación fija que proporciona acceso a distintas secciones del sitio:
+
+- **Inicio**: Redirige a la página principal de ArenaGG.
+- **Valorant**: Enlace a la página de torneos de Valorant.
+- **League of Legends**: Enlace a la página de torneos de League of Legends.
+- **Counter Strike 2**: Página actual.
+- **Soporte**: Acceso a la sección de ayuda para los usuarios.
+
+Los botones están estilizados con el color rojo característico de ArenaGG (#dd3232).
+
+### 2. Banner de Torneos de Counter Strike 2
+
+Esta sección presenta un mensaje promocional para los torneos de Counter Strike 2. Se invita a los usuarios a formar equipos y competir contra otros.
+
+### 3. Crear Torneo
+
 Los usuarios pueden crear sus propios torneos rellenando un formulario. Cuando se hace clic en el botón "Crea tu propio Torneo", el formulario se vuelve visible con los siguientes campos:
 
-- **Nombre del Torneo:** El usuario debe proporcionar un nombre.
-- **Cantidad de versus:** El formato de los enfrentamientos (por ejemplo, 1v1, 2v2, etc.).
-- **Descripción:** Una breve descripción del torneo.
+- **Nombre del Torneo**: El usuario debe proporcionar un nombre.
+- **Número de jugadores por equipo**: La cantidad de jugadores que debe tener cada equipo.
 
 El formulario está inicialmente oculto y se muestra cuando el usuario hace clic en el botón correspondiente. Los campos deben completarse antes de enviar el formulario.
 
-## 4. Lista de Torneos
-Se muestra una lista de los torneos disponibles. Se cargan dos torneos de ejemplo ("Torneo 1" y "Torneo 2"). Cada torneo incluye:
+### 4. Lista de Torneos
+
+Se muestra una lista de los torneos disponibles. Por defecto, se cargan tres torneos de ejemplo ("Torneo 1", "Torneo 2" y "Torneo 3"). Cada torneo incluye:
+
 - **Nombre del Torneo**
-- **Descripción**
-- **Botones de Acción:**
-  - **Registrarse:** Permite a los usuarios inscribirse en el torneo.
-  - **Eliminar:** Permite a los usuarios eliminar el torneo de la lista.
+- **Número de jugadores por equipo**
+
+**Botones de Acción**:
+- **Registrarse**: Permite a los usuarios inscribirse en el torneo.
+- **Eliminar**: Permite a los usuarios eliminar el torneo de la lista.
 
 Cuando el usuario hace clic en "Registrarse", se activa la función correspondiente. Si se hace clic en "Eliminar", el torneo se elimina de la lista.
+
+### 5. Pie de Página (Footer)
+
+El pie de página incluye:
+
+- **Autores del Proyecto**:
+  - Aarón Gutiérrez Caña
+  - Alejandro Jiménez Pérez
+  - Jesús Carmelo Pérez Robles
+
+- **Derechos de Autor**:
+  - © 2025 Arena GG, Inc
+
+### 6. Funcionalidades Principales
+
+- **Navegación Interactiva**: Acceso rápido a las distintas secciones del sitio.
+- **Creación de Torneos**: Permite a los usuarios crear nuevos torneos con nombre y cantidad de jugadores.
+- **Registro a Torneos**: Los usuarios pueden inscribirse a torneos existentes.
+- **Eliminación de Torneos**: Los torneos creados pueden eliminarse mediante un botón específico.
+
+### 7. Archivos Externos
+
+- **counter.css**: Hoja de estilos personalizada para la página de Counter Strike 2.
+- **counter.js**: Archivo JavaScript que gestiona las funciones de creación, inscripción y eliminación de torneos.
+- **Bootstrap 5**: Framework CSS para garantizar un diseño moderno y responsivo.
+
+---
+# ArenaGG - Página de League of Legends
+
+Este archivo describe la estructura y funcionamiento de la página dedicada a los torneos de League of Legends en la plataforma ArenaGG.
+
+## Descripción
+
+La página permite a los usuarios visualizar y registrarse en los torneos de League of Legends. También ofrece la posibilidad de crear torneos personalizados. La interfaz está diseñada utilizando HTML, CSS (a través de Bootstrap 5) y JavaScript para mejorar la experiencia del usuario.
+
+### 1. Encabezado (Navegación)
+
+El encabezado es una barra de navegación fija que proporciona acceso a distintas secciones del sitio:
+
+- **Inicio**: Redirige a la página principal de ArenaGG.
+- **Valorant**: Enlace a la página de torneos de Valorant.
+- **League of Legends**: Página actual.
+- **Counter Strike 2**: Enlace a la página de torneos de Counter Strike 2.
+- **Soporte**: Acceso a la sección de ayuda para los usuarios.
+
+Los botones de la barra de navegación están estilizados con el color rojo característico de ArenaGG (#dd3232).
+
+### 2. Banner de Torneos de League of Legends
+
+Esta sección muestra un mensaje de bienvenida y promoción para los torneos de League of Legends. Los usuarios son invitados a reunirse con sus amigos y competir en los torneos.
+
+### 3. Crear Torneo
+
+Los usuarios pueden crear sus propios torneos personalizados mediante un botón que activa un formulario de creación de torneos. Este formulario aún no está implementado en el archivo HTML proporcionado, pero el botón está presente con el siguiente texto:
+
+- **Crea tu propio Torneo**: Al hacer clic en este botón, el formulario para crear un torneo personalizado será visible (aunque no está implementado en este código).
+
+### 4. Lista de Torneos
+
+La página muestra una lista de torneos disponibles para los usuarios. Cada torneo tiene los siguientes detalles:
+
+- **Nombre del Torneo**
+- **Descripción del Torneo**
+- **Botón de Acción**: Un botón de "Registrarse" para permitir que los usuarios se inscriban en el torneo.
+
+Los torneos listados en este ejemplo son:
+
+- **Torneo 1**: 1 vs 1
+- **Torneo 2**: 2 vs 2
+- **Torneo 3**: 5 vs 5
+
+Cada torneo tiene un estilo visual que se destaca con una sombra y un borde redondeado.
+
+### 5. Pie de Página (Footer)
+
+El pie de página contiene información sobre los autores del proyecto y los derechos de autor:
+
+- **Autores del Proyecto**:
+  - Aarón Gutiérrez Caña
+  - Alejandro Jiménez Pérez
+  - Jesús Carmelo Pérez Robles
+
+- **Derechos de Autor**:
+  - © 2025 Arena GG, Inc
+
+### 6. Funcionalidades Principales
+
+- **Navegación Interactiva**: Acceso rápido a las distintas secciones del sitio mediante un menú de navegación.
+- **Visualización de Torneos**: Los usuarios pueden ver una lista de torneos disponibles, con la opción de registrarse en ellos.
+- **Creación de Torneos**: Los usuarios tienen la opción de crear torneos personalizados, aunque el formulario aún no está implementado.
+- **Registro a Torneos**: Los usuarios pueden inscribirse en los torneos existentes.
+
+### 7. Archivos Externos
+
+- **lol.css**: Hoja de estilos personalizada para la página de League of Legends.
+- **Bootstrap 5**: Framework CSS para garantizar un diseño moderno y responsivo.
+
+---
+# ArenaGG - Página de Soporte
+
+Este archivo describe la estructura y funcionamiento de la página de **Soporte** en ArenaGG, que está diseñada para ayudar a los usuarios con sus dudas o problemas relacionados con los torneos.
+
+## Descripción
+
+La página de soporte ofrece a los usuarios un formulario de contacto para que puedan hacer preguntas o reportar problemas. Además, se incluyen respuestas a algunas **Preguntas Frecuentes** para resolver dudas comunes. La interfaz está diseñada utilizando HTML, CSS (Bootstrap 5) y JavaScript para mejorar la experiencia del usuario.
+
+### 1. Encabezado (Navegación)
+
+El encabezado es una barra de navegación fija que proporciona acceso a las distintas secciones del sitio:
+
+- **Inicio**: Redirige a la página principal de ArenaGG.
+- **Valorant**: Enlace a la página de torneos de Valorant.
+- **League of Legends**: Enlace a la página de torneos de League of Legends.
+- **Counter Strike 2**: Enlace a la página de torneos de Counter Strike 2.
+- **Soporte**: Página actual.
+
+Los botones de la barra de navegación están estilizados con el color rojo característico de ArenaGG (#dd3232).
+
+### 2. Banner de Soporte
+
+El banner muestra un mensaje de bienvenida y una invitación para que los usuarios contacten al soporte si necesitan ayuda. El fondo tiene el color rojo característico de ArenaGG (#dd3232).
+
+### 3. Formulario de Contacto
+
+Los usuarios pueden enviar un mensaje al equipo de soporte utilizando un formulario. Este formulario incluye los siguientes campos:
+
+- **Nombre**: El nombre del usuario.
+- **Correo Electrónico**: El correo electrónico del usuario.
+- **Mensaje**: Un área de texto donde los usuarios pueden escribir su consulta o problema.
+
+El formulario está diseñado con un fondo oscuro para hacer que los campos de entrada sean fácilmente legibles.
+
+### 4. Preguntas Frecuentes (FAQ)
+
+La sección de **Preguntas Frecuentes** responde a las dudas más comunes que los usuarios puedan tener. Actualmente, las preguntas incluyen:
+
+- **¿Cómo puedo crear un torneo?**: Instrucciones sobre cómo crear un torneo personalizado.
+- **¿Cómo me registro en un torneo?**: Detalles sobre el registro en los torneos.
+- **¿Puedo cancelar mi registro en un torneo?**: Respuesta sobre la posibilidad de cancelar un registro.
+
+### 5. Pie de Página (Footer)
+
+El pie de página contiene información sobre los autores del proyecto y los derechos de autor:
+
+- **Autores del Proyecto**:
+  - Aarón Gutiérrez Caña
+  - Alejandro Jiménez Pérez
+  - Jesús Carmelo Pérez Robles
+
+- **Derechos de Autor**:
+  - © 2025 Arena GG, Inc
+
+### 6. Funcionalidades Principales
+
+- **Formulario de Contacto**: Los usuarios pueden enviar consultas al equipo de soporte.
+- **Preguntas Frecuentes**: Los usuarios pueden consultar respuestas a dudas comunes sin tener que contactar al soporte.
+- **Navegación Interactiva**: Acceso rápido a las distintas secciones del sitio mediante un menú de navegación.
+
+### 7. Archivos Externos
+
+- **Bootstrap 5**: Framework CSS para garantizar un diseño moderno y responsivo.
 
 ---
 
@@ -182,6 +513,8 @@ Este archivo JavaScript está diseñado para gestionar la validación de un form
 ## Resumen:
 Este script gestiona la validación de los campos de correo electrónico y contraseña de un formulario de login. Si alguno de los campos tiene errores, se muestra un mensaje de error y se deshabilita el botón de login. El botón se habilita solo cuando ambos campos son válidos.
 
+---
+
 # Descripción del Funcionamiento del Script de Registro (registro.js)
 
 Este archivo JavaScript se utiliza para gestionar la validación de un formulario de registro de usuario. El script asegura que los campos de nombre, correo electrónico y contraseña sean válidos antes de permitir el registro.
@@ -190,7 +523,6 @@ Este archivo JavaScript se utiliza para gestionar la validación de un formulari
 
 ### 1. Variables Iniciales:
 - **Contadores de Errores**: Se utilizan tres contadores (`contadorErroresNombre`, `contadorErroresEmail`, `contadorErroresPassword`) para llevar un registro de los errores ocurridos en los campos de nombre, correo electrónico y contraseña respectivamente.
-- **Lista de Correos Válidos**: Se define una lista `email_validos` que contiene los correos electrónicos válidos permitidos para el registro.
 
 ### 2. Validación del Nombre de Usuario:
 - **Función `validateName()`**:
@@ -226,6 +558,9 @@ Este archivo JavaScript se utiliza para gestionar la validación de un formulari
 
 ## Resumen:
 Este script maneja la validación de los campos de un formulario de registro. Se valida que el nombre de usuario, correo electrónico y contraseña cumplan con las reglas establecidas. Si alguno de los campos tiene errores, el botón de registro se deshabilita hasta que todos los campos sean válidos.
+
+---
+
 
 # Descripción del Funcionamiento del Script para la Creación y Gestión de Torneos (valorant.js)
 
@@ -275,6 +610,90 @@ Este archivo JavaScript se utiliza para gestionar la creación, visualización, 
 
 ## Resumen:
 Este script permite a los usuarios crear, visualizar y eliminar torneos. Se validan los datos del formulario antes de agregar el torneo al contenedor. Los usuarios también pueden registrarse en un torneo o abandonarlo, y los torneos pueden ser eliminados del contenedor.
+
+---
+
+# Descripción del Funcionamiento del Script para la Creación y Gestión de Torneos (counter.js)
+
+Este archivo JavaScript está diseñado para gestionar la creación, visualización, inscripción y eliminación de torneos. Permite a los usuarios crear torneos mediante un formulario, validar los datos introducidos, y administrar la inscripción o eliminación de los torneos creados.
+
+## Funcionalidad:
+
+### 1. Mostrar y Ocultar el Formulario:
+- **Función `anadir_torneo()`**:
+  - Muestra el formulario de creación de torneos, cambiando el estilo del contenedor a `block` para hacerlo visible.
+
+- **Función `ocultar_form()`**:
+  - Oculta el formulario de creación de torneos, cambiando el estilo del contenedor a `none` para hacerlo invisible.
+
+### 2. Creación de un Torneo:
+- **Función `crear_torneo(event, form)`**:
+  - Evita el envío del formulario mediante `event.preventDefault()`.
+  - Obtiene los valores del nombre del torneo y el número de jugadores por equipo.
+  - Valida que:
+    - El nombre del torneo tenga entre 3 y 15 caracteres y empiece con una mayúscula.
+    - El número de jugadores por equipo sea un número válido.
+    - Si la validación es exitosa, oculta el formulario y agrega el torneo al contenedor.
+
+### 3. Agregar un Torneo al Contenedor:
+- Cuando los datos son válidos, se crea un nuevo contenedor en el DOM con la información del torneo (nombre y jugadores).
+- Se generan dos botones:
+  - **Botón de "Registrarse"**: Cambia su texto entre "Registrarse" y "Abandonar" cada vez que se hace clic.
+  - **Botón de "Eliminar"**: Elimina el torneo del contenedor cuando se hace clic en el botón.
+
+### 4. Funciones para los Botones:
+- **Función `inscribirse(boton)`**:
+  - Cambia el texto del botón entre "Registrarse" y "Abandonar" según el estado actual del botón.
+
+- **Función `eliminar(boton)`**:
+  - Elimina el torneo correspondiente del contenedor cuando se hace clic en el botón "Eliminar".
+
+### 5. Validación de Datos del Formulario:
+- **Validación del Nombre del Torneo**: 
+  - El nombre debe empezar con una letra mayúscula y tener entre 3 y 15 caracteres. Si no cumple con estas condiciones, se muestra un mensaje de error.
+  
+- **Validación del Número de Jugadores**: 
+  - El valor debe ser un número válido. Si no cumple con esta condición, se muestra un mensaje de error.
+
+---
+
+# Descripción del Funcionamiento del Script para la Gestión de Torneos (lol.js)
+
+Este script permite crear y gestionar torneos. Los usuarios pueden crear torneos, inscribirse en ellos y cancelar su inscripción. Además, incluye validación de los campos del formulario y una interfaz dinámica para la gestión de los torneos.
+
+## Funcionalidad:
+
+### 1. Mostrar y Ocultar el Formulario:
+- **Función `mostrarFormulario()`**:
+  - Muestra el formulario para crear un torneo. El formulario incluye campos para el nombre, la descripción y el formato del torneo (1 vs 1, 2 vs 2, 5 vs 5).
+
+- **Función `cerrarFormulario()`**:
+  - Cierra el formulario de creación de torneo eliminando el HTML del DOM.
+
+### 2. Creación de un Torneo:
+- **Función `crearTorneo()`**:
+  - Recupera los valores del nombre, descripción y formato del torneo.
+  - Si los campos no están completos, muestra una alerta para completarlos.
+  - Si los campos son válidos, crea un torneo con un ID único, el nombre, la descripción, y un botón para inscribirse.
+  - El torneo creado se agrega al contenedor de torneos y se cierra el formulario.
+
+### 3. Inscripción y Cancelación de Inscripción:
+- **Función `registrarEquipo(button)`**:
+  - Cuando un usuario se inscribe en un torneo, se incrementa el contador de equipos registrados.
+  - El botón "Registrarse" cambia a "Cancelar registro", y el evento de inscripción se reemplaza por uno que permite cancelar la inscripción.
+
+- **Función `cancelarRegistro(button)`**:
+  - Cuando un usuario cancela su inscripción, se decrementa el contador de equipos registrados.
+  - El botón "Cancelar registro" vuelve a "Registrarse", y el evento se reemplaza por uno que permite inscribirse nuevamente.
+
+### 4. Manejo de Eventos en los Botones:
+- **Evento de Click en el Botón de Inscripción**:
+  - Si el botón de inscripción dice "Registrarse", cambia su texto a "Cancelar registro" y cambia el estilo del botón a un color de advertencia.
+  - Si el botón dice "Cancelar registro", vuelve a "Registrarse" y cambia el estilo de nuevo a rojo.
+
+## Resumen:
+Este script proporciona una forma sencilla de gestionar torneos, permitiendo a los usuarios crear torneos, inscribirse y cancelar su inscripción, todo ello con una interfaz dinámica e interactiva.
+
 
 ## Créditos
 

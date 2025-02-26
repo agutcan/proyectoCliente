@@ -5,9 +5,6 @@ let contadorErroresNombre = 1;
 let contadorErroresEmail = 1;
 let contadorErroresPassword = 1;
 
-// Lista de correos válidos
-let email_validos = ["valido@valido.com", "valido2@valido.com"];
-
 // Función para validar el nombre de usuario
 function validateName() {
     let name = document.getElementById('registerName').value; // Obtiene el valor del campo de nombre
