@@ -52,6 +52,8 @@ function crear_torneo(event, form) {
     // Si no hay errores, oculta el formulario y crea el nuevo torneo
     if (contadorErrores == 0) {
         ocultar_form(); // Llama a la función para ocultar el formulario
+    } else {
+        return false;
     }
 
     // Contenedor al que se añaden los torneos
